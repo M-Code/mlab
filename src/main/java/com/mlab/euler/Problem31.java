@@ -3,7 +3,7 @@ package com.mlab.euler;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Problem31 {
+public class Problem31 implements Problem {
 	private Set<Integer> money = new HashSet<Integer>();
 	public Problem31() {
 		money.add(1);
@@ -16,7 +16,7 @@ public class Problem31 {
 		money.add(200);
 	}
 	
-	public int ways(int currentVal, int add, int goal) {
+	private int ways(int currentVal, int add, int goal) {
 		if(currentVal == goal) {
 			return 1;
 		} else if(currentVal > goal) {
@@ -29,13 +29,15 @@ public class Problem31 {
 			}
 			return sum;
 		}
-		
-		
 	}
 
+	public void solve() {
+		System.out.println(ways(0, 0, 200));
+	}
+	
 	public static void main(String[] args) {
-		Problem31 prob = new Problem31();
-		System.out.println(prob.ways(0, 0, 200));
+		Problem31 problem = new Problem31();
+		Benchmark.run(problem);
 	}
 
 }
