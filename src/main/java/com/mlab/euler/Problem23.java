@@ -8,27 +8,25 @@ public class Problem23 implements Problem {
 	public void solve() {
 		int sum = 0;
 		Set<Integer> abundantSet = new HashSet<Integer>();
+		Set<Integer> possibleSum = new HashSet<Integer>();
 		for(int i = 12; i < 28123; i++) {
 			if(isAbundant(i)) {
 				abundantSet.add(i);
-				//System.out.println(i);
-			}
-			
-			boolean found = false;
-			
-			for(Integer num1 : abundantSet) {
-				for(Integer num2 : abundantSet) {
-					if(num1 + num2 == i)
-						break;
-				}
-				if(found)
-					break;
-			}
-			
-			if(!found) {
-				sum += i;
 			}
 		}
+		
+		for(Integer num1 : abundantSet) {
+			for(Integer num2 : abundantSet) {
+				possibleSum.add(num1 + num2);
+			}
+		}
+		
+		for(int i = 1; i <= 28123; i++) {
+			if(!possibleSum.contains(i)) {
+				sum+= i;
+			}
+		}
+		
 		System.out.println(sum);
 	}
 	
