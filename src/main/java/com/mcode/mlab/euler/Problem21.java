@@ -1,4 +1,4 @@
-package com.mlab.euler;
+package com.mcode.mlab.euler;
 
 public class Problem21 implements Problem {
 

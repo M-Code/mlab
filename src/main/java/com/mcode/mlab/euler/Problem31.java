@@ -1,4 +1,4 @@
-package com.mlab.euler;
+package com.mcode.mlab.euler;
 
 import java.util.HashSet;
 import java.util.Set;

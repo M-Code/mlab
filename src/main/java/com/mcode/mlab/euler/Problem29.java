@@ -1,4 +1,4 @@
-package com.mlab.euler;
+package com.mcode.mlab.euler;
 
 import java.math.BigDecimal;
 import java.util.HashSet;

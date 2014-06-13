@@ -1,4 +1,4 @@
-package com.mlab.concurrency;
+package com.mcode.mlab.concurrency;
 
 /**
  * Volatile variables are not thread-safe!
