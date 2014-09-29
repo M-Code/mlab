@@ -56,7 +56,7 @@ public class Problem11 implements Problem {
 		}
 		return product;
 	}
-	public void solve() {
+	public String solve() {
 		for(int i = 0; i < data.length - (NUM_PRODUCT - 1); i++) {
 			for(int j = 0; j < data[i].length - (NUM_PRODUCT - 1); j++) {
 				maxProduct = Math.max(maxProduct, rowProduct(i, j));
@@ -65,7 +65,7 @@ public class Problem11 implements Problem {
 				maxProduct = Math.max(maxProduct, leftDiagProduct(i, j));
 			}
 		}
-		System.out.println(maxProduct);
+		return "" + maxProduct;
 	}
 	
 	public static void main(String[] args) {

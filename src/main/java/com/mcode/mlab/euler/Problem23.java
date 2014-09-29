@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Problem23 implements Problem {
 
-	public void solve() {
+	public String solve() {
 		int sum = 0;
 		Set<Integer> abundantSet = new HashSet<Integer>();
 		Set<Integer> possibleSum = new HashSet<Integer>();
@@ -27,7 +27,7 @@ public class Problem23 implements Problem {
 			}
 		}
 		
-		System.out.println(sum);
+		return "" + sum;
 	}
 	
 	private boolean isAbundant(int num) {

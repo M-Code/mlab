@@ -2,7 +2,7 @@ package com.mcode.mlab.euler;
 
 public class Problem21 implements Problem {
 
-	public void solve() {
+	public String solve() {
 		int answer = 0;
 		
 		for(int i = 2; i <= 10000; i++) {
@@ -11,7 +11,7 @@ public class Problem21 implements Problem {
 				answer += i;
 			}
 		}
-		System.out.println(answer);
+		return "" + answer;
 	}
 	
 	private int divisorSum(int num) {

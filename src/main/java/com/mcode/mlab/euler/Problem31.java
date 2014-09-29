@@ -31,8 +31,8 @@ public class Problem31 implements Problem {
 		}
 	}
 
-	public void solve() {
-		System.out.println(ways(0, 0, 200));
+	public String solve() {
+		return "" + ways(0, 0, 200);
 	}
 	
 	public static void main(String[] args) {

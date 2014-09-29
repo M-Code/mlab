@@ -110,11 +110,11 @@ public class Problem13 implements Problem {
 
 	}
 
-	public void solve() {
+	public String solve() {
 		for(String number : data) {
 			sum = sum.add(new BigDecimal(number));
 		}
-		System.out.println(sum);
+		return "" + sum;
 	}
 
 }
