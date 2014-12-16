@@ -3,7 +3,7 @@ package com.mcode.mlab.concurrency;
 /**
  * Volatile variables are not thread-safe!
  */
-public class VolatileLab 
+public class VolatileLab
 	public volatile int a = 0;
 
 	public static void main(String[] args) throws Exception {
