@@ -3,4 +3,17 @@
   <groupId>com.mcode</groupId>
   <artifactId>mlab</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+<distributionManagement>
+  <repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://rpi:8080/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://rpi:8080/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
